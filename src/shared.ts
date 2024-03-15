@@ -15,7 +15,6 @@ export function setLogger(pinoLogger?: SocketConfig['logger']) {
 }
 
 export function usePrisma() {
-  invariant(prisma, 'Prisma client cannot be used before initialization');
   return prisma;
 }
 
